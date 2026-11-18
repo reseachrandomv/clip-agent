@@ -1,0 +1,12 @@
+.git
+.venv
+venv
+data
+__pycache__
+.pytest_cache
+.mypy_cache
+.env
+tests
+*.md
+**/*.mp4
+**/*.jpg
