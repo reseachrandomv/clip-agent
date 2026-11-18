@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clip Agent</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span>Clip Agent</span>
+    </div>
+    <p class="rights">Only clip videos you have the rights to, or campaign permission for.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Long video in.<br>Vertical shorts out.</h1>
+      <p class="lede">Paste a YouTube link. Clip Agent finds the replayed moments and cuts 3–5 captioned 9:16 clips, ready for Shorts.</p>
+
+      <form id="url-form">
+        <label for="url">YouTube URL</label>
+        <div class="row">
+          <input id="url" name="url" type="url" inputmode="url" autocomplete="off" placeholder="https://www.youtube.com/watch?v=…" required>
+          <button type="submit" id="submit">Make clips</button>
+        </div>
+      </form>
+
+      <form id="file-form" class="file-form">
+        <label class="file-label">
+          <input id="file" type="file" accept="video/*">
+          <span>Or upload a video you can use</span>
+        </label>
+      </form>
+      <p id="form-error" class="form-error" hidden></p>
+    </section>
+
+    <section id="status" class="status" hidden>
+      <p class="kicker" id="job-title"></p>
+      <ol class="steps" id="steps">
+        <li data-stage="download">Download</li>
+        <li data-stage="transcribe">Transcribe</li>
+        <li data-stage="pick">Pick moments</li>
+        <li data-stage="render">Render</li>
+      </ol>
+      <p id="message" class="message"></p>
+      <div class="bar" aria-hidden="true"><span id="bar"></span></div>
+    </section>
+
+    <section id="results" hidden>
+      <div class="results-head">
+        <h2>Clips</h2>
+        <p id="results-meta"></p>
+      </div>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
