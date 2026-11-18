@@ -1,0 +1,5 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic>=2.6
+yt-dlp[default,deno]>=2025.11.12
+faster-whisper>=1.1.0
