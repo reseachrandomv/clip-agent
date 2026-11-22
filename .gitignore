@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.env
+data/
+*.mp4
+*.webm
+*.mkv
+*.jpg
+.DS_Store

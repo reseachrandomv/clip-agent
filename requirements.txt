@@ -1,0 +1,10 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+yt-dlp>=2025.10.14
+faster-whisper==1.1.1
+# faster-whisper 1.1.1 imports requests without declaring it.
+requests>=2.32.0
+# PyAV 19 dropped the metadata_errors argument faster-whisper passes to av.open.
+av==18.1.0
+httpx==0.28.1

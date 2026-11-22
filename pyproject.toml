@@ -1,0 +1,9 @@
+[project]
+name = "clip-agent"
+version = "0.1.0"
+description = "Turn a YouTube link into vertical short clips."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
